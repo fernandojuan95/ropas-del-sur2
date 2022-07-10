@@ -1,0 +1,188 @@
+*{
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightblue;
+}
+/*titulo*/
+.titulo h1{
+    background-image: linear-gradient(to left, red , yellow);
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.titulo p{
+    background-color: brown;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    border: 2px blue;
+}
+/*ul*/
+ul li
+{
+    display: block;
+    font-size: 20px;
+    display: inline-block;
+    padding: 15px 20px;
+}
+ul li:hover{
+    cursor:pointer;
+}
+h3{
+    background-color: brown;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.ropa--hombre{
+    transform: translate(850px, 6px);
+}
+.ropa--mujer{
+    transform: translate(850px, 6px);
+}
+/*contactanos*/
+.contacto--tlo{
+    background-color: bisque;
+    color: black;
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px cornflowerblue;
+}
+.contacto--tit{
+    background-color: beige;
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+/*sucursales*/
+.sucursal{
+    background-color: beige;
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.sucursal--titulo{
+    background-color: beige;
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.sucursal--parrafo{
+    background-color: blanchedalmond;
+    color: black;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*productos*/
+.producto--pfo{
+    background-color: blanchedalmond;
+    color: black;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*footer*/
+footer{
+    background-image: linear-gradient(rgb(104, 173, 104)),(rgb(209, 209, 125));
+    text-align:justify;
+}
+
+/*media*/
+header{
+    grid-area: header;
+}
+.imagenes{
+    grid-area: imagenes;
+}
+footer{
+    grid-area: footer;
+}
+@media screen and (max-width:500px) 
+{
+    .media{
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: 
+        "header header header"
+        "imagenes imagenes imagenes"
+        "footer footer footer"
+        }
+        .imagenes{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        footer ul{
+            display: inline-block;
+            justify-content: flex-end;
+        }
+        .ropa--hombre{
+            width: 250px;
+        }
+        .ropa--hombre2{
+            width: 250px;
+        }
+        .ropa--mujer{
+            width: 250px;
+        }
+        .ropa--mujer2{
+            width: 250px;
+        }   
+}
+@media screen and (max-width:700px) 
+{
+    .media{
+        grid-template-columns: 1fr 3fr 1fr 1fr;
+        grid-template-areas: 
+        "header header header header"
+        "imagenes imagenes imagenes imagenes"
+        "footer footer footer footer"
+        }
+        .imagenes{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        footer ul{
+            display: inline-block;
+            justify-content: flex-end;
+        }
+        .ropa--hombre{
+            width: 250px;
+        }
+        .ropa--hombre2{
+            width: 250px;
+        }
+        .ropa--mujer{
+            width: 250px;
+        }
+        .ropa--mujer2{
+            width: 250px;
+        }
+}
+@media screen and (max-width:900px) 
+{
+    .media{
+        grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header header header header header"
+        "imagenes imagenes imagenes imagenes imagenes"
+        "footer footer footer footer footer"
+        }
+        .imagenes{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        footer ul{
+            display: inline-block;
+            justify-content: flex-end;
+        }
+        .ropa--hombre{
+            width: 250px;
+        }
+        .ropa--hombre2{
+            width: 250px;
+        }
+        .ropa--mujer{
+            width: 250px;
+        }
+        .ropa--mujer2{
+            width: 250px;
+        }
